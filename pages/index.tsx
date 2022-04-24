@@ -31,7 +31,7 @@ function PostCard(post: Post) {
 export default function Home({ posts }: { posts: Post[] }) {
   return (
     <div className="max-w-xl mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">Next.js Example</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center">Polar Samples</h1>
 
       {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />
