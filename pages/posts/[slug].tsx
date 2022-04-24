@@ -27,7 +27,7 @@ const PostLayout = ({ post }: { post: Post }) => {
       <Head>
         <title>{post.title}</title>
       </Head>
-      <article className="mx-auto py-8">
+      <article className="mx-auto max-w-4xl">
         <div className="text-center mb-8">
           <time dateTime={post.date} className="text-xs text-gray-600 mb-1">
             {format(parseISO(post.date), 'LLLL d, yyyy')}
@@ -35,14 +35,17 @@ const PostLayout = ({ post }: { post: Post }) => {
           <h1>{post.title}</h1>
         </div>
 
-        <div dangerouslySetInnerHTML={{ __html: post.body.html }} />
+        <div className="mb-8" dangerouslySetInnerHTML={{ __html: post.body.html }} />
 
         {post.code_iframe ? (
-          <iframe
-            src={post.code_iframe}
-            className="h-full w-full"
-            style={{ width: '100%', height: '500px' }}
-          />
+          <div>
+            <h2>Play with the code by yourself</h2>
+            <iframe
+              src={post.code_iframe}
+              className="h-full w-full"
+              style={{ width: '100%', height: '500px' }}
+            />
+          </div>
         ) : null}
       </article>
     </>

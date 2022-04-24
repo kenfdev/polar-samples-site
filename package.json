@@ -8,11 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.3.1",
     "contentlayer": "latest",
     "next": "12.1.5",
     "next-contentlayer": "latest",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "string-strip-html": "^9.1.11"
   },
   "devDependencies": {
     "@types/react": "18.0.4",

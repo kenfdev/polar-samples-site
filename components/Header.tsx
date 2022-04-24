@@ -3,7 +3,7 @@ import Link from 'next/link';
 function Logo() {
   return (
     <Link href="/">
-      <a className="inline-flex justify-center items-center">
+      <a className="text-black no-underline inline-flex justify-center items-center">
         <span className="font-bold">Polar Samples</span>
       </a>
     </Link>
