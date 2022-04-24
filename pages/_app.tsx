@@ -16,7 +16,7 @@ export default function MyApp({ Component, pageProps }) {
 
       <Header />
 
-      <div className="px-6 sm:text-2xl">
+      <div className="px-6 sm:text-4xl">
         <Component {...pageProps} />
       </div>
     </>
